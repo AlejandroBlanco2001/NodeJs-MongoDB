@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRUD NodeJs-MongoDB (Prestamos Biblioteca)</title>
+    <style>
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .table thead,
+        tbody {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex mb-4">
+        <span class="navbar-brand mr-auto p-2">Biblioteca</span>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Colecciones
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/add/autor"> Autor </a>
+                        <a class=" dropdown-item" href="/add/autorea"> Autorea </a>
+                        <a class="dropdown-item" href="/add/copia">Copia</a>
+                        <a class="dropdown-item" href="/add/edicion">Edición</a>
+                        <a class="dropdown-item" href="/add/libro">Libro</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/add/prestamo">Préstamo</a>
+                        <a class="dropdown-item" href="/add/usuario">Usuario</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Consultas
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Copias de Libros</a>
+                        <a class="dropdown-item" href="#">Préstamo por Usuario</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>

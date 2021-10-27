@@ -1,0 +1,43 @@
+<%- include('partials/_header') -%>
+
+    <div class="container">
+        <div class="row">
+            <!-- FORM -->
+            <div class="col-md-6 offset-md-3">
+                <div class="card card-body p-5 rounded-0">
+                    <h3>Actualización Préstamo</h3>
+                    <form action="/update/<%= coleccion %>/<%= registro._id %>" method="POST">
+                        <% for (var lla in llaves) { %>
+                            <% if (lla !=0 ) {%>
+                                <div class="mb-3">
+                                    <label for="<%= llaves[lla] %>">
+                                        ACTUALICE <%= llaves[lla].toUpperCase() %>
+                                    </label>
+                                    <% if (tipoDato[lla] !='select' ) {%>
+                                        <input id="<%= llaves[lla] %>" class="form-control mb-3"
+                                            type="<%= tipoDato[lla] %>" name="<%= llaves[lla] %>"
+                                            placeholder="Inserte <%= llaves[lla] %>"
+                                            value="<%= registro[llaves[lla]] %>" autofocus />
+                                        <% }else{ %>
+                                            <select id="<%= llaves[lla] %>" name="<%= llaves[lla] %>"
+                                                class="form-control mb-3">
+                                                <% var colec=conections[llaves[lla]].coleccion %>
+                                                    <% var key=conections[llaves[lla]].key %>
+                                                        <% for (var con in colec) { %>
+                                                            <option value="<%= colec[con]._id %>" selected>
+                                                                <%= colec[con][key] %>
+                                                            </option>
+                                                            <% } %>
+                                            </select>
+                                            <% } %>
+                                </div>
+                                <% } %>
+                                    <% } %>
+
+                                        <button class="btn btn-primary" type="submit"> ACTUALIZAR PRÉSTAMO </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/_footer') -%>
