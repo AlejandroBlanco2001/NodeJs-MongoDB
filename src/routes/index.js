@@ -44,7 +44,9 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/add/:col', async (req, res) => {
-    const { col } = req.params;
+    const {
+        col
+    } = req.params;
     const objetos = await collections[col].find();
     console.log(objetos);
     const con = await foreignKeys(col);
@@ -58,14 +60,19 @@ router.get('/add/:col', async (req, res) => {
 });
 
 router.post('/add/:col', async (req, res) => {
-    const { col } = req.params;
+    const {
+        col
+    } = req.params;
     const p = new collections[col](req.body);
     await p.save();
     res.redirect(`/add/${col}`);
 });
 
 router.get('/edit/:col/:id', async (req, res) => {
-    const { col, id } = req.params;
+    const {
+        col,
+        id
+    } = req.params;
     const objeto = await collections[col].findById(id);
     const con = await foreignKeys(col);
     res.render('edit', {
@@ -78,14 +85,24 @@ router.get('/edit/:col/:id', async (req, res) => {
 });
 
 router.post('/update/:col/:id', async (req, res) => {
-    const { col, id } = req.params;
-    await collections[col].updateOne({ _id: id }, req.body);
+    const {
+        col,
+        id
+    } = req.params;
+    await collections[col].updateOne({
+        _id: id
+    }, req.body);
     res.redirect(`/add/${col}`);
 });
 
 router.get('/delete/:col/:id', async (req, res) => {
-    const { col, id } = req.params;
-    await collections[col].deleteOne({ _id: id });
+    const {
+        col,
+        id
+    } = req.params;
+    await collections[col].deleteOne({
+        _id: id
+    });
     res.redirect(`/add/${col}`);
 });
 

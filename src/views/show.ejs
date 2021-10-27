@@ -1,95 +1,91 @@
 <%- include('partials/_header') -%>
-    <div class="container-fluid no-gutters">
-        <div class="row">
-            <!-- FORM -->
-            <div class="col-md-4">
-                <div class="card card-body p-5 rounded-0">
-                    <h3>Registro <%= coleccion %>
-                    </h3>
-                    <form id="formulario" action="/add/<%= coleccion %>" method="POST">
-                        <% for (var lla in llaves) { %>
-                            <% if (lla !=0 ) {%>
-                                <div class="mb-3">
-                                    <label for="<%= llaves[lla] %>">
-                                        <%= llaves[lla].toUpperCase() %>
-                                    </label>
-                                    <% if (tipoDato[lla] !='select' ) {%>
-                                        <input id="<%= llaves[lla] %>" class="form-control mb-3"
-                                            type="<%= tipoDato[lla] %>" name="<%= llaves[lla] %>"
-                                            placeholder="Inserte <%= llaves[lla] %>" autofocus />
-                                        <% }else{ %>
-                                            <select id="<%= llaves[lla] %>" name="<%= llaves[lla] %>"
-                                                class="form-control mb-3">
-                                                <% var colec=conections[llaves[lla]].coleccion %>
-                                                    <% var key=conections[llaves[lla]].key %>
-                                                        <% for (var con in colec) { %>
-                                                            <option value="<%= colec[con]._id %>" selected>
-                                                                <%= colec[con][key] %>
-                                                            </option>
-                                                            <% } %>
-                                            </select>
-                                            <% } %>
-                                </div>
-                                <% } %>
-                                    <% } %>
-                                        <button class="btn btn-primary" type="submit"> INSERTAR </button>
-                    </form>
-                </div>
-            </div>
-            <!-- TABLE -->
-            <div class="col-md-8">
-                <table class="table align-middle table-striped">
-                    <thead class="table-dark">
-                        <tr>
-                            <th> N° </th>
-                            <% for (var lla in llaves) { %>
-                                <% if (lla !=0 ) {%>
-                                    <th>
-                                        <%= llaves[lla] %>
-                                    </th>
-                                    <% } %>
-                                        <% } %>
-                                            <th> Opción </th>
-                        </tr>
-                    </thead>
-                    <tbody style="white-space:nowrap;">
-                        <% for (var reg in registros) { %>
-                            <tr>
-                                <td>
-                                    <%= parseInt(reg) + 1 %>
-                                </td>
-                                <% for (var lla in llaves) { %>
-                                    <% if (lla !=0 ) {%>
-                                        <td>
-                                            <% if (tipoDato[lla] !='select' ) {%>
-                                                <%= registros[reg][llaves[lla]] %>
-                                                    <% }else{ %>
-                                                        
-                                                        <% var colec=conections[llaves[lla]].coleccion %>
-                                                            <% var key=conections[llaves[lla]].key %>
-                                                                <% for (var con in colec) { %>
-                                                                    <% if (registros[reg][llaves[lla]].toString() === colec[con]._id.toString()) {%>
-                                                                    <%= colec[con][key] %>
-                                                                        <% }} %>
-                                                                            <% } %>
-                                        </td>
-                                        <% } %>
-                                            <% }%>
-                                                <td>
-                                                    <a href="/edit/<%= coleccion %>/<%= registros[reg]._id %>"
-                                                        class="btn btn-info">
-                                                        Edit
-                                                    </a>
-                                                    <a href="/delete/<%= coleccion %>/<%= registros[reg]._id %>"
-                                                        class="btn btn-danger">
-                                                        Delete
-                                                    </a>
-                                                </td>
-                            </tr>
+<div class="container-fluid no-gutters">
+    <div class="row">
+        <!-- FORM -->
+        <div class="col-md-4">
+            <div class="card card-body p-5 rounded-0">
+                <h3>Registro <%= coleccion %>
+                </h3>
+                <form id="formulario" action="/add/<%= coleccion %>" method="POST">
+                    <% for (var lla in llaves) { %>
+                    <% if (lla !=0 ) {%>
+                    <div class="mb-3">
+                        <label for="<%= llaves[lla] %>">
+                            <%= llaves[lla].toUpperCase() %>
+                        </label>
+                        <% if (tipoDato[lla] !='select' ) {%>
+                        <input id="<%= llaves[lla] %>" class="form-control mb-3" type="<%= tipoDato[lla] %>"
+                            name="<%= llaves[lla] %>" placeholder="Inserte <%= llaves[lla] %>" autofocus />
+                        <% }else{ %>
+                        <select id="<%= llaves[lla] %>" name="<%= llaves[lla] %>" class="form-control mb-3">
+                            <% var colec=conections[llaves[lla]].coleccion %>
+                            <% var key=conections[llaves[lla]].key %>
+                            <% for (var con in colec) { %>
+                            <option value="<%= colec[con]._id %>" selected>
+                                <%= colec[con][key] %>
+                            </option>
                             <% } %>
-                    </tbody>
-                </table>
+                        </select>
+                        <% } %>
+                    </div>
+                    <% } %>
+                    <% } %>
+                    <button class="btn btn-primary" type="submit"> INSERTAR </button>
+                </form>
             </div>
         </div>
+        <!-- TABLE -->
+        <div class="col-md-8">
+            <table class="table align-middle table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th> N° </th>
+                        <% for (var lla in llaves) { %>
+                        <% if (lla !=0 ) {%>
+                        <th>
+                            <%= llaves[lla] %>
+                        </th>
+                        <% } %>
+                        <% } %>
+                        <th> Opción </th>
+                    </tr>
+                </thead>
+                <tbody style="white-space:nowrap;">
+                    <% for (var reg in registros) { %>
+                    <tr>
+                        <td>
+                            <%= parseInt(reg) + 1 %>
+                        </td>
+                        <% for (var lla in llaves) { %>
+                        <% if (lla !=0 ) {%>
+                        <td>
+                            <% if (tipoDato[lla] !='select' ) {%>
+                            <%= registros[reg][llaves[lla]] %>
+                            <% }else{ %>
+
+                            <% var colec=conections[llaves[lla]].coleccion %>
+                            <% var key=conections[llaves[lla]].key %>
+                            <% for (var con in colec) { %>
+                            <% if (registros[reg][llaves[lla]].toString() === colec[con]._id.toString()) {%>
+                            <%= colec[con][key] %>
+                            <% }} %>
+                            <% } %>
+                        </td>
+                        <% } %>
+                        <% }%>
+                        <td>
+                            <a href="/edit/<%= coleccion %>/<%= registros[reg]._id %>" class="btn btn-info">
+                                Edit
+                            </a>
+                            <a href="/delete/<%= coleccion %>/<%= registros[reg]._id %>" class="btn btn-danger">
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <%- include('partials/_footer') -%>
+</div>
+<%- include('partials/_footer') -%>
