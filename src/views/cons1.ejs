@@ -1,0 +1,28 @@
+<%- include('partials/_header') -%>
+<div class="container-fluid no-gutters">
+  <div class="row">
+    <div class="col-md-10 offset-md-1">
+      <table class="table align-middle table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th>N°</th>
+            <% for (var lla in llaves) { %>
+            <th><%= llaves[lla] %></th>
+            <% } %>
+          </tr>
+        </thead>
+        <tbody style="white-space: nowrap">
+          <% for (var reg in registros) { %>
+          <tr>
+            <td><%= parseInt(reg) + 1 %></td>
+            <% for (var lla in llaves) { %>
+            <td><%= registros[reg][llaves[lla]] %></td>
+            <% }%>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<%- include('partials/_footer') -%>
