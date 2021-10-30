@@ -8,6 +8,7 @@ const edicion = require('../models/edicion');
 const libro = require('../models/libro');
 const prestamo = require('../models/prestamo');
 const usuario = require('../models/usuario');
+const querys = require('../querys');
 
 const collections = {
     autor: autor.autorModel,
@@ -42,6 +43,16 @@ const tipoDato = {
 router.get('/', async (req, res) => {
     res.render('home');
 });
+
+router.get('/:name(q1|q2)', async(req,res) =>{
+    queryNumber = req.params.name[1];
+    console.log(queryNumber)
+    if(queryNumber == "1"){
+        res = querys.q1(collections.autorea);
+    }else{
+        res = querys.q2(collections.prestamo);
+    }
+})
 
 router.get('/add/:col', async (req, res) => {
     const {
@@ -150,4 +161,6 @@ async function foreignKeys(coleccion) {
     return conections;
 }
 
-module.exports = router;
+module.exports = {
+    router
+};
