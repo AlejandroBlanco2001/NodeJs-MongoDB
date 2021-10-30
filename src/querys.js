@@ -1,5 +1,6 @@
-function q1(model){
-    return model.aggregate([{
+async function q1(model){
+    let respuesta;
+    await model.aggregate([{
         $lookup:{
             from: 'autors',
             localField: 'autor',
@@ -41,14 +42,15 @@ function q1(model){
             'Idioma de la edicción': '$libroEdicion.idioma',
             'Numero de la copia': '$edicionCopias.numero' 
         }
-    }],function(req,res){
-        console.log(res);
+    }], function(req, res){
+        respuesta = res;
     });
+    return respuesta;
 }
 
-function q2(model){
-    console.log(model);
-    return model.aggregate([{
+async function q2(model){
+    let respuesta;
+    await model.aggregate([{
         $lookup:{
             from: 'usuarios',
             localField: 'usuario',
@@ -87,8 +89,9 @@ function q2(model){
             'Titulo del libro': '$prestamoLibro.titulo',
         }
     }],function(req,res){
-        console.log(res);
+        respuesta = res;
     })
+    return respuesta;
 }
 
 module.exports = {

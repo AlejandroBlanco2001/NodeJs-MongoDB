@@ -8,6 +8,7 @@ const edicion = require('../models/edicion');
 const libro = require('../models/libro');
 const prestamo = require('../models/prestamo');
 const usuario = require('../models/usuario');
+
 const querys = require('../querys');
 
 const collections = {
@@ -44,14 +45,22 @@ router.get('/', async (req, res) => {
     res.render('home');
 });
 
-router.get('/:name(q1|q2)', async(req,res) =>{
+router.get('/:name(q1|q2)', async (req, res) => {
     queryNumber = req.params.name[1];
     console.log(queryNumber)
-    if(queryNumber == "1"){
-        res = querys.q1(collections.autorea);
-    }else{
-        res = querys.q2(collections.prestamo);
+    let llavesCons;
+    let sol;
+    if (queryNumber == "1") {
+        llavesCons = ['Nombre del autor', 'Titulo del libro', 'ISBN de la edicción', 'Año de publicación', 'Idioma de la edicción', 'Numero de la copia'];
+        sol = await querys.q1(collections.autorea);
+    } else {
+        llavesCons = ['Nombre del autor', 'Titulo de libros'];
+        sol = await querys.q2(collections.prestamo);
     }
+    res.send({
+        registros: sol,
+        llavesCons
+    });
 })
 
 router.get('/add/:col', async (req, res) => {
