@@ -53,14 +53,21 @@ router.get('/:name(q1|q2)', async (req, res) => {
     if (queryNumber == "1") {
         llavesCons = ['Nombre del autor', 'Titulo del libro', 'ISBN de la edicción', 'Año de publicación', 'Idioma de la edicción', 'Numero de la copia'];
         sol = await querys.q1(collections.autorea);
+        res.render("cons1",{
+            registros: sol,
+            llaves: llavesCons
+        });
     } else {
-        llavesCons = ['Nombre del autor', 'Titulo de libros'];
+        llavesCons = ['Nombre del usuario', 'Titulo del libro'];
         sol = await querys.q2(collections.prestamo);
+        console.log("SOL>", sol);
+        res.render("cons2",{
+            registros: sol,
+            llaves: llavesCons
+        });
+        
     }
-    res.send({
-        registros: sol,
-        llavesCons
-    });
+  
 })
 
 router.get('/add/:col', async (req, res) => {

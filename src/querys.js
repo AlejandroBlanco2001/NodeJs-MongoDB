@@ -85,7 +85,7 @@ async function q2(model){
     {
         $project:
         {
-            'Nombre del autor': '$prestamosUsers.nombre',
+            'Nombre del usuario': '$prestamosUsers.nombre',
             'Titulo del libro': '$prestamoLibro.titulo',
         }
     }],function(req,res){
