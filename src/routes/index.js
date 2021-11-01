@@ -162,10 +162,15 @@ async function foreignKeys(coleccion) {
         case 'prestamo':
             const regCopia = await collections.copia.find();
             const regUsuario = await collections.usuario.find();
+            const regEdicion = await collections.edicion.find();
             conections = {
                 copia: {
                     coleccion: regCopia,
                     key: 'numero'
+                },
+                edicion: {
+                    coleccion: regEdicion,
+                    key: 'ISBN'
                 },
                 usuario: {
                     coleccion: regUsuario,
