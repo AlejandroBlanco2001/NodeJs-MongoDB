@@ -74,8 +74,20 @@ router.get('/add/:col', async (req, res) => {
     const {
         col
     } = req.params;
-    const objetos = await collections[col].find();
-    console.log(objetos);
+    let objetos;
+    if (col == 'prestamo'){
+        objetos = await collections[col].aggregate([{
+                $project:{
+                    copia: 1,
+                    usuario: 1,
+                    fecha_Prestamo: { $dateToString: { format: "%d-%m-%Y", date: "$fecha_Prestamo" } },
+                    fecha_Devolucion: { $dateToString: { format: "%d-%m-%Y", date: "$fecha_Devolucion" } }
+                }
+            }
+        ]);
+    }else{
+        objetos = await collections[col].find();
+    }
     const con = await foreignKeys(col);
     res.render('show', {
         coleccion: col,
