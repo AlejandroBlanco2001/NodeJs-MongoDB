@@ -33,8 +33,8 @@ const prestamoSchema = new Schema({
 });
 
 const prestamoModel = mongoose.model('Préstamo', prestamoSchema);
-const llaves = ["_id", "copia", "edicion", "usuario", "fecha_Prestamo", "fecha_Devolucion"];
-const tipoDato = ["ObjectId", "select", "select", "select", "date", "date"];
+const llaves = ["_id", "copia", "usuario", "fecha_Prestamo", "fecha_Devolucion"];
+const tipoDato = ["ObjectId", "select", "select", "date", "date"];
 
 module.exports = {
     prestamoModel,

@@ -62,8 +62,7 @@
                             <% if (tipoDato[lla] !='select' ) {%>
                             <%= registros[reg][llaves[lla]] %>
                             <% }else{ %>
-
-                            <% var colec=conections[llaves[lla]].coleccion %>
+                            <% var colec= conections[llaves[lla]].coleccion%>
                             <% var key=conections[llaves[lla]].key %>
                             <% for (var con in colec) { %>
                             <% if (registros[reg][llaves[lla]].toString() === colec[con]._id.toString()) {%>
