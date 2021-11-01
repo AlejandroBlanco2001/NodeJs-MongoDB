@@ -160,17 +160,33 @@ async function foreignKeys(coleccion) {
             }
             break;
         case 'prestamo':
-            const regCopia = await collections.copia.find();
+            
+            const regCopia = await collections.copia.aggregate([{
+                $lookup:{
+                    from: 'edicións',
+                    localField: 'edicion',
+                    foreignField: '_id',
+                    as: 'copEd'
+                }
+            },{
+                $unwind:{
+                    path:'$copEd'
+                }
+            },
+            {
+                $project:{
+                    _id:1,
+                    'ident':{$concat:['$copEd.ISBN','-',{$toString:'$numero'}]}
+                }
+            }]);
+             
+            console.log(regCopia)
             const regUsuario = await collections.usuario.find();
-            const regEdicion = await collections.edicion.find();
+            
             conections = {
                 copia: {
                     coleccion: regCopia,
-                    key: 'numero'
-                },
-                edicion: {
-                    coleccion: regEdicion,
-                    key: 'ISBN'
+                    key: 'ident'
                 },
                 usuario: {
                     coleccion: regUsuario,
