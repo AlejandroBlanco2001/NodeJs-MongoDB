@@ -219,9 +219,48 @@ router.get('/delete/:col/:id', async (req, res) => {
         col,
         id
     } = req.params;
-    await collections[col].deleteOne({
-        _id: id
-    });
+    switch (col) {
+        case 'edicion':
+            let autLibro = await collections.libro.find({
+                edicion: id
+            })
+            for (var i in autLibro) {
+                await collections.autorea.deleteMany({
+                    libro: autLibro[i]._id
+                });
+            }
+            await collections.libro.deleteMany({
+                edicion: id
+            });
+            await collections.copia.deleteMany({
+                edicion: id
+            });
+            await collections.edicion.deleteOne({
+                _id: id
+            });
+            break;
+        case 'libro':
+            await collections.autorea.deleteMany({
+                libro: id
+            });
+            await collections.libro.deleteOne({
+                _id: id
+            });
+            break;
+        case 'autor':
+            await collections.autorea.deleteMany({
+                autor: id
+            });
+            await collections.autor.deleteOne({
+                _id: id
+            });
+            break;
+        default:
+            await collections[col].deleteOne({
+                _id: id
+            });
+            break;
+    }
     res.redirect(`/add/${col}`);
 });
 
