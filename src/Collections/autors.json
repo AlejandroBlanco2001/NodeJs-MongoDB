@@ -1,0 +1,103 @@
+[{
+  "_id": {
+    "$oid": "617c489a034567273b4ef69d"
+  },
+  "nombre": "Gabriel Garcia Marquez",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617c48e2034567273b4ef6a0"
+  },
+  "nombre": "Dante Alighieri",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617c48f3034567273b4ef6a3"
+  },
+  "nombre": "Giovanni Boccaccio",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617c48fa034567273b4ef6a6"
+  },
+  "nombre": "Jorge Luis Borges",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617c4900034567273b4ef6a9"
+  },
+  "nombre": "Albert Camus",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617c490b034567273b4ef6ac"
+  },
+  "nombre": "Miguel de Cervantes",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617c4bdcc9e7bbaab7c6cea6"
+  },
+  "nombre": "Jean Paul Sartre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617c4c3c3218873a24b99ef0"
+  },
+  "nombre": "Jorge Isaacs",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617c4c5ec4c1150dfdc4afea"
+  },
+  "nombre": "Nelson Mandela",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617f3082627a795d8beb773c"
+  },
+  "nombre": "Federico Garcia Lorca",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617f3082627a795d8beb773e"
+  },
+  "nombre": "Chico Gel El original",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617f3a77b7539e663fd47523"
+  },
+  "nombre": "Franz Kafka",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617f3a89b7539e663fd47526"
+  },
+  "nombre": "Charles Dickens",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617f3b0ab7539e663fd4752f"
+  },
+  "nombre": "Hans Christian Andersen",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180006192715cf0c312aac9"
+  },
+  "nombre": "Günter Grass",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618002cb92715cf0c312ab17"
+  },
+  "nombre": "Johannes Vilhelm Jensen",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180036992715cf0c312ab35"
+  },
+  "nombre": "John Green",
+  "__v": 0
+}]

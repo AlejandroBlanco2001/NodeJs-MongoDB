@@ -1,0 +1,239 @@
+[{
+  "_id": {
+    "$oid": "617cae2850397afb50fa57b7"
+  },
+  "RUT": "123",
+  "nombre": "Pedro S",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617cae2b50397afb50fa57ba"
+  },
+  "RUT": "1234",
+  "nombre": "Juan C",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617cae3250397afb50fa57bd"
+  },
+  "RUT": "12345",
+  "nombre": "Juanito Alimaña",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800e0b92715cf0c312ac38"
+  },
+  "RUT": "7742921",
+  "nombre": "Benito Antonio",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800e1a92715cf0c312ac3b"
+  },
+  "RUT": "6023571",
+  "nombre": "Isaac Vargas",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800e2992715cf0c312ac3e"
+  },
+  "RUT": "7868986",
+  "nombre": "German Gonzales",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800e3392715cf0c312ac41"
+  },
+  "RUT": "4016559",
+  "nombre": "Sebastian Lopez",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800e3a92715cf0c312ac44"
+  },
+  "RUT": "8910700",
+  "nombre": "Camilo Blanco",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800e5592715cf0c312ac4a"
+  },
+  "RUT": "3679822",
+  "nombre": "Raul Cespedes",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800e6492715cf0c312ac4d"
+  },
+  "RUT": "2821846",
+  "nombre": "Dylan Cabrera",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800e8092715cf0c312ac50"
+  },
+  "RUT": "2431257",
+  "nombre": "Jonathan Cantillo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800e9192715cf0c312ac53"
+  },
+  "RUT": "6686427",
+  "nombre": "Sthephany Hernandez",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800ec392715cf0c312ac56"
+  },
+  "RUT": "1360106",
+  "nombre": "Rosée Visage du Merde",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800ed792715cf0c312ac59"
+  },
+  "RUT": "6712568",
+  "nombre": "Jose HotDog",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800eec92715cf0c312ac5c"
+  },
+  "RUT": "4523463",
+  "nombre": "Jhon River",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800f0292715cf0c312ac5f"
+  },
+  "RUT": "5587672",
+  "nombre": "Buzz Ocoro Lucumi",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800f2a92715cf0c312ac62"
+  },
+  "RUT": "8691738",
+  "nombre": "Anne Hathaway",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800f3392715cf0c312ac65"
+  },
+  "RUT": "997892",
+  "nombre": "Cielo Torres",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800f4592715cf0c312ac68"
+  },
+  "RUT": "2725091",
+  "nombre": "Katy Gomita",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800f5292715cf0c312ac6b"
+  },
+  "RUT": "2704061",
+  "nombre": "Marcela Rojas",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800f7892715cf0c312ac6e"
+  },
+  "RUT": "7063429",
+  "nombre": "Pedrolo Echado",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800f8592715cf0c312ac71"
+  },
+  "RUT": "3508597",
+  "nombre": "Zendaya Asprilla Mosquera",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800fd992715cf0c312ac74"
+  },
+  "RUT": "477786",
+  "nombre": "Carlos Darwin",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800fef92715cf0c312ac77"
+  },
+  "RUT": "43969",
+  "nombre": "John Caminador",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800ffa92715cf0c312ac7a"
+  },
+  "RUT": "331179",
+  "nombre": "Viejo Parr",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180100492715cf0c312ac7d"
+  },
+  "RUT": "927315",
+  "nombre": "Shaira Lee",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180100f92715cf0c312ac80"
+  },
+  "RUT": "815572",
+  "nombre": "Mia Malkova",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180102192715cf0c312ac83"
+  },
+  "RUT": "615926",
+  "nombre": "Eva Elfie",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180103b92715cf0c312ac86"
+  },
+  "RUT": "444946",
+  "nombre": "Johnny Pecados",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180105a92715cf0c312ac89"
+  },
+  "RUT": "671897",
+  "nombre": "Chamber Broken",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180107692715cf0c312ac8c"
+  },
+  "RUT": "558367",
+  "nombre": "Cobra Topfragg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180108692715cf0c312ac8f"
+  },
+  "RUT": "492577",
+  "nombre": "Lucario Ilcum",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618010f392715cf0c312ac92"
+  },
+  "RUT": "70825",
+  "nombre": "Juliana Progres",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180110192715cf0c312ac95"
+  },
+  "RUT": "266816",
+  "nombre": "Jeune Acabal",
+  "__v": 0
+}]
