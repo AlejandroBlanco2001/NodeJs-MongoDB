@@ -37,9 +37,9 @@ async function q1(model){
         {
             'Nombre del autor': '$autores.nombre',
             'Titulo del libro': '$libro.titulo',
-            'ISBN de la edicción': '$libroEdicion.ISBN',
+            'ISBN de la edición': '$libroEdicion.ISBN',
             'Año de publicación': '$libroEdicion.año',
-            'Idioma de la edicción': '$libroEdicion.idioma',
+            'Idioma de la edición': '$libroEdicion.idioma',
             'Numero de la copia': '$edicionCopias.numero' 
         }
     }], function(req, res){
