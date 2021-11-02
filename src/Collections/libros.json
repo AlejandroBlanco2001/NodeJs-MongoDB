@@ -1,0 +1,244 @@
+[{
+  "_id": {
+    "$oid": "617c4fb1d03654162e6e2bb2"
+  },
+  "edicion": {
+    "$oid": "6180003b92715cf0c312aac5"
+  },
+  "titulo": "Cien Años de Soledad",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617cadc650397afb50fa5776"
+  },
+  "edicion": {
+    "$oid": "617c4f90d03654162e6e2ba3"
+  },
+  "titulo": "El extranjero",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617f3b3cb7539e663fd47537"
+  },
+  "edicion": {
+    "$oid": "617f3b2db7539e663fd47532"
+  },
+  "titulo": "Cuentos Infantiles",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617f3bcdb7539e663fd47541"
+  },
+  "edicion": {
+    "$oid": "617f3bbbb7539e663fd4753c"
+  },
+  "titulo": "Il Filostrato",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180009492715cf0c312aad2"
+  },
+  "edicion": {
+    "$oid": "6180003b92715cf0c312aac5"
+  },
+  "titulo": "El tambor de Hojalata",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618000a992715cf0c312aad6"
+  },
+  "edicion": {
+    "$oid": "6180003b92715cf0c312aac5"
+  },
+  "titulo": "La Metamorfosis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618000ce92715cf0c312aada"
+  },
+  "edicion": {
+    "$oid": "6180003b92715cf0c312aac5"
+  },
+  "titulo": "Carta al Padre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180010092715cf0c312aae1"
+  },
+  "edicion": {
+    "$oid": "6180003b92715cf0c312aac5"
+  },
+  "titulo": "La Biblioteca de Babel",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618001f892715cf0c312aaea"
+  },
+  "edicion": {
+    "$oid": "617c4f9fd03654162e6e2ba6"
+  },
+  "titulo": "Ficciones",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618002be92715cf0c312ab12"
+  },
+  "edicion": {
+    "$oid": "617f3b2db7539e663fd47532"
+  },
+  "titulo": "La caida del Rey",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180033c92715cf0c312ab27"
+  },
+  "edicion": {
+    "$oid": "617fffe692715cf0c312aabf"
+  },
+  "titulo": "Mil veces hasta siempre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180034792715cf0c312ab2b"
+  },
+  "edicion": {
+    "$oid": "617fffe692715cf0c312aabf"
+  },
+  "titulo": "El teorema Katherine",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618004ce92715cf0c312ab57"
+  },
+  "edicion": {
+    "$oid": "617fff7f92715cf0c312aab9"
+  },
+  "titulo": "La Galatea",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180050092715cf0c312ab5b"
+  },
+  "edicion": {
+    "$oid": "617fff6d92715cf0c312aab6"
+  },
+  "titulo": "El ingenioso Caballero Don Quijote de la Mancha",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180051792715cf0c312ab5f"
+  },
+  "edicion": {
+    "$oid": "617fff6d92715cf0c312aab6"
+  },
+  "titulo": "El Coloquio de los Perros",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618005db92715cf0c312ab7b"
+  },
+  "edicion": {
+    "$oid": "617f3bbbb7539e663fd4753c"
+  },
+  "titulo": "La Divina Comedia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618005ee92715cf0c312ab7f"
+  },
+  "edicion": {
+    "$oid": "617f3bbbb7539e663fd4753c"
+  },
+  "titulo": "Vita Nuova",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180065192715cf0c312ab95"
+  },
+  "edicion": {
+    "$oid": "617fff9092715cf0c312aabc"
+  },
+  "titulo": "El Ser y la Nada",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180069a92715cf0c312aba6"
+  },
+  "edicion": {
+    "$oid": "617f462e8fc6299d079d82be"
+  },
+  "titulo": "La Maria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180070692715cf0c312abbc"
+  },
+  "edicion": {
+    "$oid": "617fffe692715cf0c312aabf"
+  },
+  "titulo": "Cartas desde la Prisión",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800a7592715cf0c312abd4"
+  },
+  "edicion": {
+    "$oid": "617f462e8fc6299d079d82be"
+  },
+  "titulo": "Libro de Poemas",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800a8a92715cf0c312abd8"
+  },
+  "edicion": {
+    "$oid": "617f468c8fc6299d079d82c4"
+  },
+  "titulo": "Romancero Gitano",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800abc92715cf0c312abec"
+  },
+  "edicion": {
+    "$oid": "617fffe692715cf0c312aabf"
+  },
+  "titulo": "Ea Ea Cartagenera",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800afe92715cf0c312abfb"
+  },
+  "edicion": {
+    "$oid": "617c4f9fd03654162e6e2ba6"
+  },
+  "titulo": "Oliver Twist",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800b1692715cf0c312abff"
+  },
+  "edicion": {
+    "$oid": "617c4f9fd03654162e6e2ba6"
+  },
+  "titulo": "David Copperfield",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800b2392715cf0c312ac03"
+  },
+  "edicion": {
+    "$oid": "617c4f9fd03654162e6e2ba6"
+  },
+  "titulo": "Cuento de Navidad",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61800b8492715cf0c312ac14"
+  },
+  "edicion": {
+    "$oid": "617fff7f92715cf0c312aab9"
+  },
+  "titulo": "El Coronel no tiene quien le escriba",
+  "__v": 0
+}]

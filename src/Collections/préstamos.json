@@ -1,0 +1,953 @@
+[{
+  "_id": {
+    "$oid": "61801969ae2025146b29bb0e"
+  },
+  "copia": {
+    "$oid": "6180148592715cf0c312ad5c"
+  },
+  "usuario": {
+    "$oid": "6180110192715cf0c312ac95"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-10-20T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-11-18T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180197aae2025146b29bb13"
+  },
+  "copia": {
+    "$oid": "6180145b92715cf0c312ad34"
+  },
+  "usuario": {
+    "$oid": "6180102192715cf0c312ac83"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-10-27T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-11-18T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6180711b3bf81946637f8b8f"
+  },
+  "copia": {
+    "$oid": "6180136192715cf0c312acaa"
+  },
+  "usuario": {
+    "$oid": "6180103b92715cf0c312ac86"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-10-04T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-12-01T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618071553bf81946637f8b94"
+  },
+  "copia": {
+    "$oid": "6180147892715cf0c312ad50"
+  },
+  "usuario": {
+    "$oid": "6180100f92715cf0c312ac80"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-11-02T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-11-24T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61807892b11489967e5ce19f"
+  },
+  "copia": {
+    "$oid": "6180148592715cf0c312ad5c"
+  },
+  "usuario": {
+    "$oid": "6180110192715cf0c312ac95"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-11-10T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-11-24T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618091db6c99d0bda7017547"
+  },
+  "copia": {
+    "$oid": "6180146792715cf0c312ad40"
+  },
+  "usuario": {
+    "$oid": "6180100492715cf0c312ac7d"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-11-02T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-11-03T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6181423f737538546c032002"
+  },
+  "copia": {
+    "$oid": "617f43a4a54ba725e1dcbccb"
+  },
+  "usuario": {
+    "$oid": "61800ec392715cf0c312ac56"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-09-06T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-09-29T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61814255737538546c032007"
+  },
+  "copia": {
+    "$oid": "6180141c92715cf0c312ad10"
+  },
+  "usuario": {
+    "$oid": "617cae2b50397afb50fa57ba"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-07-06T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-09-01T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6181426a737538546c03200c"
+  },
+  "copia": {
+    "$oid": "6180143492715cf0c312ad26"
+  },
+  "usuario": {
+    "$oid": "61800e2992715cf0c312ac3e"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-10-12T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-10-14T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6181428a737538546c032011"
+  },
+  "copia": {
+    "$oid": "6180137792715cf0c312acba"
+  },
+  "usuario": {
+    "$oid": "618010f392715cf0c312ac92"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-09-06T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-11-03T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61814916af2f17cf889cd6a4"
+  },
+  "copia": {
+    "$oid": "6180140992715cf0c312ad04"
+  },
+  "usuario": {
+    "$oid": "6180105a92715cf0c312ac89"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-11-23T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-12-02T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61814949af2f17cf889cd6a9"
+  },
+  "copia": {
+    "$oid": "6180142c92715cf0c312ad1e"
+  },
+  "usuario": {
+    "$oid": "61800e3392715cf0c312ac41"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-05-04T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-07-06T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6181495aaf2f17cf889cd6ae"
+  },
+  "copia": {
+    "$oid": "6180146492715cf0c312ad3c"
+  },
+  "usuario": {
+    "$oid": "61800e8092715cf0c312ac50"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-07-20T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-07-21T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6181499eaf2f17cf889cd6b3"
+  },
+  "copia": {
+    "$oid": "618013ab92715cf0c312acdc"
+  },
+  "usuario": {
+    "$oid": "61800f5292715cf0c312ac6b"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-07-13T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-11-13T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618149b5af2f17cf889cd6b8"
+  },
+  "copia": {
+    "$oid": "6180140692715cf0c312ad00"
+  },
+  "usuario": {
+    "$oid": "61800f0292715cf0c312ac5f"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-05-03T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-05-04T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618149caaf2f17cf889cd6bd"
+  },
+  "copia": {
+    "$oid": "6180143492715cf0c312ad26"
+  },
+  "usuario": {
+    "$oid": "61800fd992715cf0c312ac74"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-06-10T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-06-24T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618149f4af2f17cf889cd6c2"
+  },
+  "copia": {
+    "$oid": "6180146b92715cf0c312ad44"
+  },
+  "usuario": {
+    "$oid": "61800f4592715cf0c312ac68"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-01-05T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-01-06T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61814a08af2f17cf889cd6c7"
+  },
+  "copia": {
+    "$oid": "6180138792715cf0c312acca"
+  },
+  "usuario": {
+    "$oid": "61800f2a92715cf0c312ac62"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-10-10T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-10-18T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61814a2aaf2f17cf889cd6cc"
+  },
+  "copia": {
+    "$oid": "6180137e92715cf0c312acbe"
+  },
+  "usuario": {
+    "$oid": "61800e1a92715cf0c312ac3b"
+  },
+  "fecha_Prestamo": {
+    "$date": "2020-12-08T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2020-12-10T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61814a51af2f17cf889cd6d1"
+  },
+  "copia": {
+    "$oid": "6180143492715cf0c312ad26"
+  },
+  "usuario": {
+    "$oid": "61800e9192715cf0c312ac53"
+  },
+  "fecha_Prestamo": {
+    "$date": "2020-11-09T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2020-11-11T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61814a7baf2f17cf889cd6d6"
+  },
+  "copia": {
+    "$oid": "618013ab92715cf0c312acdc"
+  },
+  "usuario": {
+    "$oid": "61800f3392715cf0c312ac65"
+  },
+  "fecha_Prestamo": {
+    "$date": "2019-09-02T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2019-09-23T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61814b12af2f17cf889cd6db"
+  },
+  "copia": {
+    "$oid": "6180148092715cf0c312ad58"
+  },
+  "usuario": {
+    "$oid": "61800f4592715cf0c312ac68"
+  },
+  "fecha_Prestamo": {
+    "$date": "2020-06-09T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2020-06-24T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61814b55af2f17cf889cd6e0"
+  },
+  "copia": {
+    "$oid": "618013a892715cf0c312acd8"
+  },
+  "usuario": {
+    "$oid": "61800e3392715cf0c312ac41"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-10-05T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-10-13T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618153f2af2f17cf889cd6e5"
+  },
+  "copia": {
+    "$oid": "617f439ba54ba725e1dcbcc7"
+  },
+  "usuario": {
+    "$oid": "61800f7892715cf0c312ac6e"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-09-13T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-10-12T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61815406af2f17cf889cd6ea"
+  },
+  "copia": {
+    "$oid": "6180134c92715cf0c312ac9a"
+  },
+  "usuario": {
+    "$oid": "61800fef92715cf0c312ac77"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-08-02T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-09-21T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61815433af2f17cf889cd6ef"
+  },
+  "copia": {
+    "$oid": "6180144892715cf0c312ad30"
+  },
+  "usuario": {
+    "$oid": "61800ffa92715cf0c312ac7a"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-10-05T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-10-06T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6181545baf2f17cf889cd6f4"
+  },
+  "copia": {
+    "$oid": "617f443759f1852821dd2f0f"
+  },
+  "usuario": {
+    "$oid": "6180103b92715cf0c312ac86"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-08-03T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-09-22T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618154c3af2f17cf889cd6f9"
+  },
+  "copia": {
+    "$oid": "617f444a59f1852821dd2f15"
+  },
+  "usuario": {
+    "$oid": "61800f3392715cf0c312ac65"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-03-02T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-03-18T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618154d6af2f17cf889cd6fe"
+  },
+  "copia": {
+    "$oid": "6180135592715cf0c312ac9e"
+  },
+  "usuario": {
+    "$oid": "61800fef92715cf0c312ac77"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-10-06T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-10-07T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61815502af2f17cf889cd703"
+  },
+  "copia": {
+    "$oid": "6180135992715cf0c312aca2"
+  },
+  "usuario": {
+    "$oid": "61800fef92715cf0c312ac77"
+  },
+  "fecha_Prestamo": {
+    "$date": "2019-06-04T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2019-09-02T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61815510af2f17cf889cd708"
+  },
+  "copia": {
+    "$oid": "6180135e92715cf0c312aca6"
+  },
+  "usuario": {
+    "$oid": "6180110192715cf0c312ac95"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-06-29T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-07-06T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61815539af2f17cf889cd70d"
+  },
+  "copia": {
+    "$oid": "6180136992715cf0c312acae"
+  },
+  "usuario": {
+    "$oid": "6180107692715cf0c312ac8c"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-05-12T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-06-01T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6181554aaf2f17cf889cd712"
+  },
+  "copia": {
+    "$oid": "6180136b92715cf0c312acb2"
+  },
+  "usuario": {
+    "$oid": "61800fef92715cf0c312ac77"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-11-11T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-11-18T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6181556baf2f17cf889cd717"
+  },
+  "copia": {
+    "$oid": "6180136e92715cf0c312acb6"
+  },
+  "usuario": {
+    "$oid": "61800e8092715cf0c312ac50"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-10-05T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-10-06T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6181558eaf2f17cf889cd71c"
+  },
+  "copia": {
+    "$oid": "6180142392715cf0c312ad18"
+  },
+  "usuario": {
+    "$oid": "61800f8592715cf0c312ac71"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-11-02T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-12-07T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618155ccaf2f17cf889cd721"
+  },
+  "copia": {
+    "$oid": "6180138c92715cf0c312acce"
+  },
+  "usuario": {
+    "$oid": "6180100492715cf0c312ac7d"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-10-20T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-10-28T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618155edaf2f17cf889cd726"
+  },
+  "copia": {
+    "$oid": "6180139392715cf0c312acd2"
+  },
+  "usuario": {
+    "$oid": "618010f392715cf0c312ac92"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-07-05T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-08-17T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6181560daf2f17cf889cd72b"
+  },
+  "copia": {
+    "$oid": "6180141f92715cf0c312ad14"
+  },
+  "usuario": {
+    "$oid": "61800f2a92715cf0c312ac62"
+  },
+  "fecha_Prestamo": {
+    "$date": "2020-02-04T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2020-02-25T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61815667af2f17cf889cd730"
+  },
+  "copia": {
+    "$oid": "6180138192715cf0c312acc2"
+  },
+  "usuario": {
+    "$oid": "61800f8592715cf0c312ac71"
+  },
+  "fecha_Prestamo": {
+    "$date": "2020-11-04T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2020-11-25T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61815698af2f17cf889cd735"
+  },
+  "copia": {
+    "$oid": "6180141892715cf0c312ad0c"
+  },
+  "usuario": {
+    "$oid": "61800e1a92715cf0c312ac3b"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-07-26T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-08-02T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6181575caf2f17cf889cd73c"
+  },
+  "copia": {
+    "$oid": "6180138492715cf0c312acc6"
+  },
+  "usuario": {
+    "$oid": "61800f0292715cf0c312ac5f"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-06-08T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-10-05T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618157ddaf2f17cf889cd741"
+  },
+  "copia": {
+    "$oid": "618013b092715cf0c312ace0"
+  },
+  "usuario": {
+    "$oid": "61800f3392715cf0c312ac65"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-01-05T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-04-12T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618157f5af2f17cf889cd746"
+  },
+  "copia": {
+    "$oid": "618013b492715cf0c312ace4"
+  },
+  "usuario": {
+    "$oid": "61800ec392715cf0c312ac56"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-05-05T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-05-06T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6181583aaf2f17cf889cd74b"
+  },
+  "copia": {
+    "$oid": "6180146092715cf0c312ad38"
+  },
+  "usuario": {
+    "$oid": "617cae2850397afb50fa57b7"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-05-04T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-08-10T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61815972af2f17cf889cd750"
+  },
+  "copia": {
+    "$oid": "618013c092715cf0c312ace8"
+  },
+  "usuario": {
+    "$oid": "61800f3392715cf0c312ac65"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-05-11T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-09-21T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6181597faf2f17cf889cd755"
+  },
+  "copia": {
+    "$oid": "618013c392715cf0c312acec"
+  },
+  "usuario": {
+    "$oid": "61800e3392715cf0c312ac41"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-09-14T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-09-16T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618159a1af2f17cf889cd75a"
+  },
+  "copia": {
+    "$oid": "618013c692715cf0c312acf0"
+  },
+  "usuario": {
+    "$oid": "617cae2b50397afb50fa57ba"
+  },
+  "fecha_Prestamo": {
+    "$date": "2019-08-06T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2019-08-14T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618159e2af2f17cf889cd75f"
+  },
+  "copia": {
+    "$oid": "618013fd92715cf0c312acf4"
+  },
+  "usuario": {
+    "$oid": "61800e6492715cf0c312ac4d"
+  },
+  "fecha_Prestamo": {
+    "$date": "2020-09-08T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2020-10-06T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618159feaf2f17cf889cd764"
+  },
+  "copia": {
+    "$oid": "618013ff92715cf0c312acf8"
+  },
+  "usuario": {
+    "$oid": "6180108692715cf0c312ac8f"
+  },
+  "fecha_Prestamo": {
+    "$date": "2018-04-03T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2018-04-17T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61815a23af2f17cf889cd769"
+  },
+  "copia": {
+    "$oid": "6180140392715cf0c312acfc"
+  },
+  "usuario": {
+    "$oid": "6180103b92715cf0c312ac86"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-05-04T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-07-12T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61815a78af2f17cf889cd76e"
+  },
+  "copia": {
+    "$oid": "6180140a92715cf0c312ad08"
+  },
+  "usuario": {
+    "$oid": "61800f0292715cf0c312ac5f"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-09-14T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-10-20T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61815cb6af2f17cf889cd784"
+  },
+  "copia": {
+    "$oid": "6180143a92715cf0c312ad2a"
+  },
+  "usuario": {
+    "$oid": "61800fef92715cf0c312ac77"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-11-01T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-11-04T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61815cc3af2f17cf889cd789"
+  },
+  "copia": {
+    "$oid": "6180142c92715cf0c312ad1e"
+  },
+  "usuario": {
+    "$oid": "61800e3392715cf0c312ac41"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-09-08T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-10-07T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61815ccbaf2f17cf889cd78e"
+  },
+  "copia": {
+    "$oid": "618013b092715cf0c312ace0"
+  },
+  "usuario": {
+    "$oid": "6180102192715cf0c312ac83"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-06-08T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-11-20T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61815cd5af2f17cf889cd793"
+  },
+  "copia": {
+    "$oid": "618013a892715cf0c312acd8"
+  },
+  "usuario": {
+    "$oid": "61800e8092715cf0c312ac50"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-06-15T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-08-10T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61815ce0af2f17cf889cd798"
+  },
+  "copia": {
+    "$oid": "618013fd92715cf0c312acf4"
+  },
+  "usuario": {
+    "$oid": "61800f8592715cf0c312ac71"
+  },
+  "fecha_Prestamo": {
+    "$date": "2021-02-10T00:00:00Z"
+  },
+  "fecha_Devolucion": {
+    "$date": "2021-03-16T00:00:00Z"
+  },
+  "__v": 0
+}]
