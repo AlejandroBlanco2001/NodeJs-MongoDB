@@ -53,7 +53,7 @@ router.get('/:name(q1|q2)', async (req, res) => {
     if (queryNumber == "1") {
         llavesCons = ['Nombre del autor', 'Titulo del libro', 'ISBN de la edicción', 'Año de publicación', 'Idioma de la edicción', 'Numero de la copia'];
         sol = await querys.q1(collections.autorea);
-        res.render("cons1",{
+        res.render("cons1", {
             registros: sol,
             llaves: llavesCons
         });
@@ -61,31 +61,47 @@ router.get('/:name(q1|q2)', async (req, res) => {
         llavesCons = ['Nombre del usuario', 'Titulo del libro'];
         sol = await querys.q2(collections.prestamo);
         console.log("SOL>", sol);
-        res.render("cons2",{
+        res.render("cons2", {
             registros: sol,
             llaves: llavesCons
         });
-        
+
     }
-  
+
 })
 
 router.get('/add/:col', async (req, res) => {
+    let error;
+    try {
+        error = req.query.error;
+    } catch (error) {
+        error = '';
+    }
+
     const {
         col
     } = req.params;
     let objetos;
-    if (col == 'prestamo'){
+    if (col == 'prestamo') {
         objetos = await collections[col].aggregate([{
-                $project:{
-                    copia: 1,
-                    usuario: 1,
-                    fecha_Prestamo: { $dateToString: { format: "%d-%m-%Y", date: "$fecha_Prestamo" } },
-                    fecha_Devolucion: { $dateToString: { format: "%d-%m-%Y", date: "$fecha_Devolucion" } }
+            $project: {
+                copia: 1,
+                usuario: 1,
+                fecha_Prestamo: {
+                    $dateToString: {
+                        format: "%d-%m-%Y",
+                        date: "$fecha_Prestamo"
+                    }
+                },
+                fecha_Devolucion: {
+                    $dateToString: {
+                        format: "%d-%m-%Y",
+                        date: "$fecha_Devolucion"
+                    }
                 }
             }
-        ]);
-    }else{
+        }]);
+    } else {
         objetos = await collections[col].find();
     }
     const con = await foreignKeys(col);
@@ -94,7 +110,8 @@ router.get('/add/:col', async (req, res) => {
         registros: objetos,
         llaves: llaves[col],
         tipoDato: tipoDato[col],
-        conections: con
+        conections: con,
+        error
     });
 });
 
@@ -103,11 +120,58 @@ router.post('/add/:col', async (req, res) => {
         col
     } = req.params;
     const p = new collections[col](req.body);
-    await p.save();
-    res.redirect(`/add/${col}`);
+    if (col == 'prestamo') {
+        let {
+            fecha_Prestamo,
+            fecha_Devolucion
+        } = req.body;
+        let diferencia = new Date(fecha_Devolucion).getTime() - new Date(fecha_Prestamo).getTime();
+        if (diferencia < 0) {
+            res.redirect(`/add/${col}?error=La fecha de prestamo no puede ser posterior a la de devolución`);
+        } else {
+            try {
+                await p.save();
+                res.redirect(`/add/${col}`);
+            } catch (error) {
+                res.redirect(`/add/${col}?error=Se encontró que la llave primaria ingresada ya fue utilizada en otro documento de la colección (puede ser más de un campo)`);
+            }
+        }
+    } else {
+        try {
+            await p.save();
+            if (col == 'edicion') {
+                let {
+                    titulo
+                } = req.body;
+                const edicion = await collections[col].findById(p._id);
+                let json = {
+                    titulo,
+                    edicion
+                }
+                let l = new collections.libro(json);
+                try {
+                    await l.save();
+                    res.redirect(`/add/${col}`);
+                } catch (error) {
+                    res.redirect(`/add/${col}?error=Se encontró que la llave primaria ingresada ya fue utilizada en otro documento de la colección (puede ser más de un campo)`);
+                }
+            } else {
+                res.redirect(`/add/${col}`);
+            }
+        } catch (error) {
+            res.redirect(`/add/${col}?error=Se encontró que la llave primaria ingresada ya fue utilizada en otro documento de la colección (puede ser más de un campo)`);
+        }
+    }
 });
 
 router.get('/edit/:col/:id', async (req, res) => {
+    let error;
+    try {
+        error = req.query.error;
+    } catch (error) {
+        error = '';
+    }
+
     const {
         col,
         id
@@ -119,7 +183,8 @@ router.get('/edit/:col/:id', async (req, res) => {
         registro: objeto,
         llaves: llaves[col],
         tipoDato: tipoDato[col],
-        conections: con
+        conections: con,
+        error
     });
 });
 
@@ -128,10 +193,25 @@ router.post('/update/:col/:id', async (req, res) => {
         col,
         id
     } = req.params;
-    await collections[col].updateOne({
-        _id: id
-    }, req.body);
-    res.redirect(`/add/${col}`);
+    try {
+        if (col == 'prestamo') {
+            let {
+                fecha_Prestamo,
+                fecha_Devolucion
+            } = req.body;
+            let diferencia = fecha_Devolucion.getTime() - fecha_Prestamo.getTime();
+            if (diferencia < 0) {
+                res.redirect(`/add/${col}?error=La fecha de devolución no puede ser mayor que la fecha de prestamo`);
+            }
+        } else {
+            await collections[col].updateOne({
+                _id: id
+            }, req.body);
+            res.redirect(`/add/${col}`);
+        }
+    } catch (error) {
+        res.redirect(`/edit/${col}/${id}?error=Se encontró que la llave primaria ingresadas ya fue utilizada en otro documento de la colección (puede ser más de un campo)`);
+    }
 });
 
 router.get('/delete/:col/:id', async (req, res) => {
@@ -172,29 +252,34 @@ async function foreignKeys(coleccion) {
             }
             break;
         case 'prestamo':
-            
+
             const regCopia = await collections.copia.aggregate([{
-                $lookup:{
-                    from: 'edicións',
-                    localField: 'edicion',
-                    foreignField: '_id',
-                    as: 'copEd'
+                    $lookup: {
+                        from: 'edicións',
+                        localField: 'edicion',
+                        foreignField: '_id',
+                        as: 'copEd'
+                    }
+                }, {
+                    $unwind: {
+                        path: '$copEd'
+                    }
+                },
+                {
+                    $project: {
+                        _id: 1,
+                        'ident': {
+                            $concat: ['$copEd.ISBN', '-', {
+                                $toString: '$numero'
+                            }]
+                        }
+                    }
                 }
-            },{
-                $unwind:{
-                    path:'$copEd'
-                }
-            },
-            {
-                $project:{
-                    _id:1,
-                    'ident':{$concat:['$copEd.ISBN','-',{$toString:'$numero'}]}
-                }
-            }]);
-             
+            ]);
+
             console.log(regCopia)
             const regUsuario = await collections.usuario.find();
-            
+
             conections = {
                 copia: {
                     coleccion: regCopia,

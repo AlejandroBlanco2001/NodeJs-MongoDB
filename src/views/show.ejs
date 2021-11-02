@@ -7,12 +7,27 @@
                 <h3>Registro <%= coleccion %>
                 </h3>
                 <form id="formulario" action="/add/<%= coleccion %>" method="POST">
+                    <% if (coleccion == 'edicion') {%>
+                    <div class="mb-3">
+                        <label for="titulo">
+                            TITULO LIBRO
+                        </label>
+                        <input id="titulo" class="form-control mb-3" type="titulo" name="titulo"
+                            placeholder="Inserte titulo" autofocus />
+                    </div>
+                    <% } %>
                     <% for (var lla in llaves) { %>
                     <% if (lla !=0 ) {%>
                     <div class="mb-3">
+                        <%if (llaves[lla] == 'copia') {%>
+                        <label for="copia">
+                            <%= llaves[lla].toUpperCase() + ' (ISBN-Número)' %>
+                        </label>
+                        <% } else { %>
                         <label for="<%= llaves[lla] %>">
                             <%= llaves[lla].toUpperCase() %>
                         </label>
+                        <% } %>
                         <% if (tipoDato[lla] !='select' ) {%>
                         <input id="<%= llaves[lla] %>" class="form-control mb-3" type="<%= tipoDato[lla] %>"
                             name="<%= llaves[lla] %>" placeholder="Inserte <%= llaves[lla] %>" autofocus />
@@ -32,6 +47,9 @@
                     <% } %>
                     <button class="btn btn-primary" type="submit"> INSERTAR </button>
                 </form>
+            </div>
+            <div>
+                <%= error %>
             </div>
         </div>
         <!-- TABLE -->
