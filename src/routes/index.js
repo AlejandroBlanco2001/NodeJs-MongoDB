@@ -51,7 +51,7 @@ router.get('/:name(q1|q2)', async (req, res) => {
     let llavesCons;
     let sol;
     if (queryNumber == "1") {
-        llavesCons = ['Nombre del autor', 'Titulo del libro', 'ISBN de la edicción', 'Año de publicación', 'Idioma de la edicción', 'Numero de la copia'];
+        llavesCons = ['Nombre del autor', 'Titulo del libro', 'ISBN de la edición', 'Año de publicación', 'Idioma de la edición', 'Numero de la copia'];
         sol = await querys.q1(collections.autorea);
         res.render("cons1", {
             registros: sol,
@@ -127,13 +127,13 @@ router.post('/add/:col', async (req, res) => {
         } = req.body;
         let diferencia = new Date(fecha_Devolucion).getTime() - new Date(fecha_Prestamo).getTime();
         if (diferencia < 0) {
-            res.redirect(`/add/${col}?error=La fecha de prestamo no puede ser posterior a la de devolución`);
+            res.redirect(`/add/${col}?error=La fecha de préstamo no puede ser posterior a la fecha de devolución.`);
         } else {
             try {
                 await p.save();
                 res.redirect(`/add/${col}`);
             } catch (error) {
-                res.redirect(`/add/${col}?error=Se encontró que la llave primaria ingresada ya fue utilizada en otro documento de la colección (puede ser más de un campo)`);
+                res.redirect(`/add/${col}?error=Se encontró que la llave primaria ingresada ya fue utilizada en otro documento de la colección (puede ser más de un campo). O bien dejó un campo vacío.`);
             }
         }
     } else {
@@ -153,13 +153,13 @@ router.post('/add/:col', async (req, res) => {
                     await l.save();
                     res.redirect(`/add/${col}`);
                 } catch (error) {
-                    res.redirect(`/add/${col}?error=Se encontró que la llave primaria ingresada ya fue utilizada en otro documento de la colección (puede ser más de un campo)`);
+                    res.redirect(`/add/${col}?error=Se encontró que la llave primaria ingresada ya fue utilizada en otro documento de la colección (puede ser más de un campo). O bien dejó un campo vacío.`);
                 }
             } else {
                 res.redirect(`/add/${col}`);
             }
         } catch (error) {
-            res.redirect(`/add/${col}?error=Se encontró que la llave primaria ingresada ya fue utilizada en otro documento de la colección (puede ser más de un campo)`);
+            res.redirect(`/add/${col}?error=Se encontró que la llave primaria ingresada ya fue utilizada en otro documento de la colección (puede ser más de un campo). O bien dejó un campo vacío.`);
         }
     }
 });
@@ -199,9 +199,14 @@ router.post('/update/:col/:id', async (req, res) => {
                 fecha_Prestamo,
                 fecha_Devolucion
             } = req.body;
-            let diferencia = fecha_Devolucion.getTime() - fecha_Prestamo.getTime();
+            let diferencia = new Date(fecha_Devolucion).getTime() - new Date(fecha_Prestamo).getTime();
             if (diferencia < 0) {
-                res.redirect(`/add/${col}?error=La fecha de devolución no puede ser mayor que la fecha de prestamo`);
+                res.redirect(`/add/${col}?error=La fecha de préstamo no puede ser posterior a la fecha de devolución.`);
+            }else {
+                await collections[col].updateOne({
+                    _id: id
+                }, req.body);
+                res.redirect(`/add/${col}`);
             }
         } else {
             await collections[col].updateOne({
@@ -210,7 +215,7 @@ router.post('/update/:col/:id', async (req, res) => {
             res.redirect(`/add/${col}`);
         }
     } catch (error) {
-        res.redirect(`/edit/${col}/${id}?error=Se encontró que la llave primaria ingresadas ya fue utilizada en otro documento de la colección (puede ser más de un campo)`);
+        res.redirect(`/edit/${col}/${id}?error=Se encontró que la llave primaria ingresada ya fue utilizada en otro documento de la colección (puede ser más de un campo). O bien dejó un campo vacío.`);
     }
 });
 
@@ -276,8 +281,6 @@ async function foreignKeys(coleccion) {
                     }
                 }
             ]);
-
-            console.log(regCopia)
             const regUsuario = await collections.usuario.find();
 
             conections = {
